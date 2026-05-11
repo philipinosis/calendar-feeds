@@ -1,0 +1,130 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Might Could Cannery//Deadlines Feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Might Could Cannery — Deadlines
+X-WR-CALDESC:LLC formation, grant deadlines, and QSBS milestones for Might Could Cannery
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:mcc-llc-name-reservation-expires@calendar-feeds.philipinosis.github
+SUMMARY:🔴 LA Name Reservation #092819327 EXPIRES
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260523
+DESCRIPTION:Hard deadline. LA Secretary of State name reservation for "Might Could Cannery LLC" expires today. File Articles of Organization via geauxBIZ before this date or the name may be claimed by a third party.\n\nFile here: https://geauxbiz.sos.la.gov/\n\nIf today is past the deadline and no entity has been filed: name reservation has lapsed. A new reservation is required.
+URL:https://geauxbiz.sos.la.gov/
+CATEGORIES:LLC,QSBS,HARD
+PRIORITY:1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P14D
+DESCRIPTION:14 days to LA name reservation expiry
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to LA name reservation expiry
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P3D
+DESCRIPTION:3 days to LA name reservation expiry
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to LA name reservation expiry
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mcc-articles-of-org-target@calendar-feeds.philipinosis.github
+SUMMARY:📄 File LA Articles of Organization (target)
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260516
+DESCRIPTION:Target date to file Articles of Organization with LA Secretary of State, leaving a week of buffer before the May 22 name reservation expiry.\n\nNote: per Research_Gaps_Filled.md, the structurally correct move for QSBS §1202 is filing as a C-corp (DE or LA) and issuing Series Seed preferred — NOT LLC member units. Confirm structure before filing.\n\nFile here: https://geauxbiz.sos.la.gov/
+URL:https://geauxbiz.sos.la.gov/
+CATEGORIES:LLC,QSBS
+PRIORITY:1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P3D
+DESCRIPTION:3 days to Articles of Organization target
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mcc-sam-gov-registration-begin@calendar-feeds.philipinosis.github
+SUMMARY:📋 Begin SAM.gov registration (4–6 week processing)
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260516
+DESCRIPTION:Begin SAM.gov registration the same day EIN is received. Processing takes 4–6 weeks, which means the USDA LFPP June 5 deadline is likely unreachable without an existing SAM registration. Required for all federal grant applications.\n\nRegister: https://sam.gov/\nThen Grants.gov: https://www.grants.gov/web/grants/applicants/registration.html
+URL:https://sam.gov/
+CATEGORIES:LLC,GRANTS
+PRIORITY:2
+END:VEVENT
+BEGIN:VEVENT
+UID:mcc-usda-lfpp-fy2026@calendar-feeds.philipinosis.github
+SUMMARY:💰 USDA LFPP FY2026 deadline ($500K ceiling)
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260606
+DESCRIPTION:USDA AMS Local Food Promotion Program FY2026.\n\nCeiling: $500K implementation / $100K planning. Match: 25% cash. Fit: ★★★★ — Aquaculture-eligible; processing intermediary frame; strongest near-term competitive opportunity.\n\nContact: FMLFPPgrants@usda.gov\n\nProgram: https://www.ams.usda.gov/services/grants/lfpp\n\nNOTE: SAM.gov + Grants.gov registration must be active. Without an existing registration, this deadline is likely unreachable.
+URL:https://www.ams.usda.gov/services/grants/lfpp
+CATEGORIES:GRANTS,USDA
+PRIORITY:2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P14D
+DESCRIPTION:2 weeks to USDA LFPP deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P3D
+DESCRIPTION:3 days to USDA LFPP deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mcc-nfwf-ncrf-2026-full-proposals@calendar-feeds.philipinosis.github
+SUMMARY:NFWF NCRF 2026 Full Proposals (invitation only)
+DTSTART;VALUE=DATE:20260624
+DTEND;VALUE=DATE:20260625
+DESCRIPTION:NFWF National Coastal Resilience Fund 2026 — full proposals.\n\nCeiling: $7M. INVITATION ONLY — pre-proposals closed March 31. Might Could not invited this cycle.\n\nProgram: https://www.nfwf.org/programs/national-coastal-resilience-fund/national-coastal-resilience-fund-2026-request-proposals\n\nKeep for reference; pre-proposal track for 2027 cycle will open early next year.
+URL:https://www.nfwf.org/programs/national-coastal-resilience-fund/national-coastal-resilience-fund-2026-request-proposals
+CATEGORIES:GRANTS,REFERENCE
+PRIORITY:5
+END:VEVENT
+BEGIN:VEVENT
+UID:mcc-restore-act-direct@calendar-feeds.philipinosis.github
+SUMMARY:RESTORE Act Direct Component (Jefferson Parish)
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+DESCRIPTION:U.S. Treasury / Jefferson Parish RESTORE Act Direct Component.\n\nFit: ★★★ — Parish must lead; for-profits ineligible as direct applicants.\n\nJefferson Parish contact: JPCoastalZone@JeffParish.net / (504) 736-6719 (Michelle Gonzales)\n\nProgram: https://home.treasury.gov/policy-issues/financial-markets-financial-institutions-and-fiscal-service/restore-act/direct-component
+URL:https://home.treasury.gov/policy-issues/financial-markets-financial-institutions-and-fiscal-service/restore-act/direct-component
+CATEGORIES:GRANTS,RESTORE
+PRIORITY:3
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P30D
+DESCRIPTION:30 days to RESTORE Direct deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mcc-call-senate-offices@calendar-feeds.philipinosis.github
+SUMMARY:📞 Call Sen. Cassidy + Kennedy re: FY2028 CPF pipeline
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260514
+DESCRIPTION:This week task per grants calendar. FY2027 House Community Project Funding window closed. Contact Senate offices now to register for FY2028 earmark pipeline.\n\nCassidy: (225) 929-7711\nKennedy: (225) 926-8033
+CATEGORIES:GRANTS,EARMARKS
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+UID:mcc-email-ldaf-rfsi@calendar-feeds.philipinosis.github
+SUMMARY:✉️ Email LDAF re: next RFSI Louisiana cycle
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260514
+DESCRIPTION:This week task. Highest-fit grant in the pipeline (★★★★★). Aquaculture explicitly eligible. Last LA cycle closed April 2024; no announcement yet for next cycle.\n\nContact: RFSI@ldaf.state.la.us
+URL:https://www.ldaf.la.gov/business/grants-funding/resilient-food-systems-infrastructure
+CATEGORIES:GRANTS,LDAF
+PRIORITY:2
+END:VEVENT
+END:VCALENDAR
