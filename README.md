@@ -1,22 +1,34 @@
 # calendar-feeds
 
-Public iCal (.ics) subscription feeds for personal calendar use.
+Public iCal (`.ics`) subscription feeds for personal calendars.
 
-## Subscribe in Apple Calendar
+Currently one feed: `cannery.ics` — Might Could Cannery LLC formation, grant, and
+QSBS deadlines, for subscription in Apple Calendar.
 
-**Mac:** Calendar → File → New Calendar Subscription → paste raw URL → Subscribe → set refresh to "Every hour".
+## Status / how it's served
 
-**iPhone:** Settings → Calendar → Accounts → Add Account → Other → Add Subscribed Calendar → paste URL.
+Published from GitHub repo `philipinosis/calendar-feeds` (branch `main`). No build
+step, no Pages — clients fetch the file directly over GitHub's raw content URL.
+Apple Calendar re-polls hourly (`REFRESH-INTERVAL:PT1H` in the feed).
 
-## Feeds
+## Structure
 
-### Might Could Cannery — Deadlines
+- `build_ics.py` — generator. Hard-coded `EVENTS` list → writes `cannery.ics`. Self-contained, no deps.
+- `cannery.ics` — generated feed. Subscribe to this; do not hand-edit.
+- `README.md` — this file.
 
-LLC formation, grant deadlines, and QSBS milestones.
+## Subscribe (Apple Calendar)
 
-Subscribe URL:
+Feed URL:
 ```
 https://raw.githubusercontent.com/philipinosis/calendar-feeds/main/cannery.ics
 ```
 
-Refreshed by the LLC countdown trigger; new deadlines appear automatically.
+- **Mac:** Calendar → File → New Calendar Subscription → paste URL → Subscribe → refresh "Every hour".
+- **iPhone:** Settings → Calendar → Accounts → Add Account → Other → Add Subscribed Calendar → paste URL.
+
+## Update a feed
+
+1. Edit the `EVENTS` list in `build_ics.py` (tuple: uid_slug, summary, ISO date, description, url, categories, priority, alarms).
+2. `python3 build_ics.py` — regenerates `cannery.ics`. Events older than yesterday are dropped automatically.
+3. Commit and push `cannery.ics` to `main`. Subscribers pick it up on the next hourly poll.
